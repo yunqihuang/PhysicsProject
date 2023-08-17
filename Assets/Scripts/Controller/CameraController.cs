@@ -102,9 +102,16 @@ namespace ActiveRagdoll
 			// delta rotation
 			if (rotate) {
 				x += Input.GetAxis("Mouse X") * rotationSensitivity;
-				y = ClampAngle(y - Input.GetAxis("Mouse Y") * rotationSensitivity, yMinLimit, yMaxLimit);
+				// y = ClampAngle(y - Input.GetAxis("Mouse Y") * rotationSensitivity, yMinLimit, yMaxLimit);
 			}
-
+			/*
+					if (Input.GetKey(KeyCode.Q)) {
+						x += Time.deltaTime * rotationSensitivity;
+					}
+					if (Input.GetKey(KeyCode.E)) {
+						x -= Time.deltaTime * rotationSensitivity;
+					}
+			*/
 			// Distance
 			distanceTarget = Mathf.Clamp(distanceTarget + zoomAdd, minDistance, maxDistance);
 		}

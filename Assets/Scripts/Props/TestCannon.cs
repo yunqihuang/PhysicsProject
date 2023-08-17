@@ -4,55 +4,50 @@ using System.Collections.Generic;
 using ActiveRagdoll;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class TestCannon : PropTrigger
+public class TestCannon :MonoBehaviour
 {
-    public Transform target;
-    public GameObject prefab;
+    public GameObject bulletPrefab;
     public Transform fireStart;
     
     public float duration;
-    public float force;
-
+    public float minForce;
+    public float maxForce;
     private float _gap;
+    private Quaternion _targetRotation;
 
-    private int _touchCount;
+    private ParticleSystem _particleSystem;
     // Start is called before the first frame update
     void Start()
     {
         _gap = 0;
-        _touchCount = 0;
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
 
-        if (_touchCount > 0)
+
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, _targetRotation, Time.fixedDeltaTime);
+        _gap += Time.fixedDeltaTime;
+        if (_gap > duration)
         {
-            transform.LookAt(target);
-            _gap += Time.deltaTime;
-            if (_gap > duration)
-            {
-                Fire();
-                _gap = 0;
-            }
+            _targetRotation = Quaternion.Euler(0, Random.Range(-30, 30), 0);
+            Fire();
+            _gap = 0;
         }
     }
 
-    public override void Trigger()
-    {
-        _touchCount++;
-    }
-    public override void Release()
-    {
-        _touchCount--;
-    }
     void Fire()
     {
+        
+        _particleSystem.Play();
         var thisTransform = fireStart;
         var originPos = thisTransform.position;
-        GameObject bullet = Instantiate(prefab, originPos, thisTransform.rotation);
-        bullet.GetComponent<Bullet>().Launch(thisTransform.forward, force);
+        GameObject bullet = Instantiate(bulletPrefab, originPos, thisTransform.rotation);
+        bullet.GetComponent<CannonBall>().Launch(thisTransform.forward, Random.Range(minForce, maxForce));
     }
 }

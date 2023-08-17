@@ -1,10 +1,23 @@
-﻿using UnityEngine;
+﻿using System;
+using Unity.VisualScripting;
+using UnityEngine;
 
 namespace ActiveRagdoll
 {
     public class PlayerController : CharacterController
     {
         public Camera cam;
+        public float longPressTime = 0.5f;
+        
+        private float _leftMouseClickTime;
+        private float _rightMouseClickTime;
+
+
+        private void Start()
+        {
+            faceDirection = transform.forward;
+        }
+
         protected override void UpdateInput()
         {
             // Moving: 
@@ -13,15 +26,19 @@ namespace ActiveRagdoll
             var cameraRotation = cam.transform.rotation.eulerAngles;
 
             movingBack = vertical < 0;
-            moveDirection = new Vector3(horizontal, 0, vertical) * (movingBack ? -1 : 1);
+            moveDirection = new Vector3(horizontal, 0, vertical);
             moveDirection =  Quaternion.Euler(0, cameraRotation.y, 0) * moveDirection;
-            moving = moveDirection.magnitude > 0.1f;
+            moving = moveDirection.magnitude > 0.2f;
 
-            // Facing:     
+            // Facing: 
+            if (moving)
+            {
+                faceDirection = moveDirection;
+            }
+
             faceAngle = 180.0f - Vector3.Angle(cam.transform.forward, Vector3.up);
             faceAngle *= Mathf.Deg2Rad;
             
-
             accelerating = Input.GetKey(KeyCode.LeftShift);
 
             // Jump:
@@ -33,51 +50,101 @@ namespace ActiveRagdoll
             {
                 jumping = false;
             }
-            
-            //Grab:
-            grabLeft = Input.GetMouseButton(0);
-            grabRight = Input.GetMouseButton(1);
-            
-            // punching Left:
-            if (!readyPunchingLeft && !punchingLeft &&  Input.GetKeyDown(KeyCode.Q))
+
+            if (Input.GetMouseButton(0))
             {
-                readyPunchingLeft = true;
-            }
-            if (readyPunchingLeft && Input.GetKeyUp(KeyCode.Q))
-            {
-                readyPunchingLeft = false;
-                punchingLeft = true;
-                punchingLeftTimer = 0;
-            }
-            if (punchingLeft)
-            {
-                punchingLeftTimer += Time.deltaTime;
-                if (punchingLeftTimer > punchHoldTime)
+                if (_leftMouseClickTime < 0.01f)
                 {
-                    punchingLeft = false;
+                    _leftMouseClickTime = Time.time;
+                }
+                if (Time.time - _leftMouseClickTime > longPressTime)
+                {
+                    // mouse hold
+                    EnableGrabLeft();
                 }
             }
             
-            // punching Right:
-            if (!readyPunchingRight && !punchingRight  && Input.GetKeyDown(KeyCode.E))
+            punchTimer += Time.deltaTime;
+            // punching Left:
+            if (Input.GetMouseButtonUp(0))
             {
-                readyPunchingRight = true;
+                if (Time.time - _leftMouseClickTime < longPressTime)
+                {                 
+                    // mouse Click
+                    if (punchTimer > punchHoldTime)
+                    {
+                        Attack();
+                        punchTimer = 0;
+                    }
+                }
+                _leftMouseClickTime = 0.0f;
+                ReleaseGrabLeft();
+            }
+            
+            
+            if (Input.GetMouseButton(1))
+            {
+                if (_rightMouseClickTime < 0.01f)
+                {
+                    _rightMouseClickTime = Time.time;
+                }
+                if (Time.time - _rightMouseClickTime > longPressTime)
+                {
+                    // mouse hold
+                    EnableGrabRight();
+                }
+            }
+            
+            if (Input.GetMouseButtonUp(1))
+            {
+                if (Time.time - _rightMouseClickTime < longPressTime)
+                {
+                    // mouse Click
+                }
+
+                _rightMouseClickTime = 0.0f;
+                ReleaseGrabRight();
             }
 
-            if (readyPunchingRight && Input.GetKeyUp(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                readyPunchingRight = false;
-                punchingRight = true;
-                punchingRightTimer = 0;
-            }
-            if (punchingRight)
-            {
-                punchingRightTimer += Time.deltaTime;
-                if (punchingRightTimer > punchHoldTime)
-                {
-                    punchingRight = false;
-                }
+                dropEquipment = true;
             }
         }
+        void ReleaseGrabRight()
+        {
+            grabRight = false;
+        }
+        void EnableGrabRight()
+        {
+            grabRight = true;
+        }
+        void ReleaseGrabLeft()
+        {
+            grabLeft = false;
+        }
+        void EnableGrabLeft()
+        {
+            grabLeft = true;
+        }
+        void Attack()
+        {
+            attack = true;
+        }
+        
+        /*
+        void Punch()
+        {
+            if (_lastPunchLeft)
+            {
+                punchingLeft = true;
+            }
+            else
+            {
+                punchingRight = true;
+            }
+            _lastPunchLeft = !_lastPunchLeft;
+        }
+        */
     }
 }

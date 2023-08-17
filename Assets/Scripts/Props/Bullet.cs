@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {    
     public int lastTime;
-    public int mass;
+    public float mass;
     private Rigidbody rig;
     // Start is called before the first frame update
     void Start()

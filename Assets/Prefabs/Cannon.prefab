@@ -145,8 +145,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -15
-    max: 15
+    min: -30
+    max: 30
     bounciness: 0.1
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -168,11 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159f947266627464e939ac7ee804ec81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  prefab: {fileID: 1658611140442441800, guid: 2d135e8a60536e140b1a3e7453af9367, type: 3}
+  bulletPrefab: {fileID: 1658611140442441800, guid: 2d135e8a60536e140b1a3e7453af9367, type: 3}
   fireStart: {fileID: 2575117597380256203}
-  duration: 1.5
-  force: 700
+  duration: 5
+  minForce: 200
+  maxForce: 350
 --- !u!1 &8050138861145220520
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,8 +196,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8050138861145220520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 1.6}
+  m_LocalRotation: {x: -0.054755345, y: -0.00000008195639, z: -0.000000007450581, w: 0.9984999}
+  m_LocalPosition: {x: 0, y: 1.3999989, z: 1.599997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

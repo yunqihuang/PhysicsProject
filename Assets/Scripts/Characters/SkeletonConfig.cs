@@ -9,6 +9,7 @@ namespace ActiveRagdoll
 {
     public class SkeletonConfig : MonoBehaviour
     {
+        [Header("AnimatorSkeleton")]
         public Transform Hips;
         public Transform Spine;
         public Transform Chest;
@@ -29,7 +30,8 @@ namespace ActiveRagdoll
         public Transform RightLeg;
         public Transform LeftFoot;
         public Transform RightFoot;
-
+        
+        
         private void Awake()
         {
             

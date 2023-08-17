@@ -3,20 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WindArea
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trunk
   - Water
   - UI
-  - Trunk
+  - Player
   - Static Scene
   - Props
-  - 
-  - 
-  - 
+  - Trigger
+  - NPC
+  - Head
   - 
   - 
   - 

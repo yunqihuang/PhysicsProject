@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4574451061869618024}
   - component: {fileID: 1066234459283959812}
   - component: {fileID: 6217884061442249756}
+  - component: {fileID: 4345309708274449838}
   m_Layer: 0
   m_Name: Fir Tree 2
   m_TagString: Untagged
@@ -116,3 +117,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &4345309708274449838
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574451061867625896}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.1980002, y: 6.839, z: 2.207}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.017, y: 5.6390004, z: 0.012}
+  m_TimeToStationary: 0.5

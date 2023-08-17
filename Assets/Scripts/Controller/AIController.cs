@@ -1,131 +1,327 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
+using ActiveRagdoll.Gameplay;
+using BehaviorDesigner.Runtime;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace ActiveRagdoll
 {
     public class AIController : CharacterController
     {
         
+        public int id;
         public Transform target;
-        private NavMeshAgent _agent;
-
-        public float holdTime;
+        public EnemyManager enemyManager;
+       
         public float attackDistance;
-        public float movingDistance;
-        public float stopTracingDistance;   
-        public float testFacingAngle;
-        public float coolDownTime;
+        public float stopTracingDistance;
+        public float rotationSpeed;
+        public bool catchPlayer;
+        
         
         private Vector3 _nextPosition;
-        private float _readyPunchTimer;
-        private Transform _hip;
+        private NavMeshAgent _agent;
+        
+        private float _grabTimer;
+        private float _standByTimer;
+        private float _checkPropTimer;
+        
+        private Vector3 _targetPosition;
+        private Vector3 _hipPosition;
+        private Vector3 _targetDir;
+        private Vector3 _moveNextDir;
 
-        private float _leftPunchTimer, _rightPunchCoolDown;
+        private PhysicalBodyController _controller;
+        private PhysicalBodyController _playerController;
+
+
+        [SerializeField]
+        private Vector3 _edgePosition;
+        [SerializeField]
+        private bool _findEdge;
+        
         protected override void UpdateInput()
         {
-            var targetPosition = target.position;
-            var hipPosition = _hip.position;
-            _agent.SetDestination(targetPosition);
+            _targetPosition = target.position;
+            _hipPosition = transform.position;
+            
             _nextPosition = _agent.nextPosition;
-
-            var moveNextDir = _nextPosition - hipPosition;
-            var targetDir = targetPosition - hipPosition;
-            moveDirection = new Vector3(moveNextDir.x, 0, moveNextDir.z);
-            // Moving: 
-            moving = moveDirection.magnitude > movingDistance;
+            _moveNextDir = _nextPosition - _hipPosition;
+            _moveNextDir.y = 0;
+            _targetDir = _targetPosition - _hipPosition;
+            _targetDir.y = 0;
             
-            // accelerating = targetDir.magnitude > 20.0f;
-           
-            _agent.isStopped = moveDirection.magnitude > stopTracingDistance;
-            
-            movingBack = false;
-            faceAngle = testFacingAngle + Random.Range(-40.0f, 40.0f);
-            faceAngle *= Mathf.Deg2Rad;
-            var distance = targetDir.magnitude;
-            if (distance < attackDistance)
+            _standByTimer += Time.deltaTime;
+            if (_moveNextDir.magnitude > stopTracingDistance)
             {
-                Attack();
+                _agent.Warp(transform.position);
+            }
+            if (!_agent.isOnNavMesh)
+            {
+                return;
+            }
+            
+            grabLeft = false;
+            grabRight = false;
+            catchPlayer = false;
+            moving = false;
+            
+
+            if (_playerController.knockedOut)
+            {
+                if (id == enemyManager.leader)
+                {
+                    if (catchPlayer)
+                    {
+                        if (!_findEdge)
+                        {
+                            SearchEdge();
+                        }
+                        else
+                        {
+                            GotoEdgeAndDrop();
+                        }
+                    }
+                    else
+                    {
+                        accelerating = false;
+                        Chase();
+                        Grab();
+                    }
+
+                    CheckGrabbed();
+                }
+                else
+                {
+                    StandBy();
+                }
+            }
+            else
+            {               
+
+                Chase();
+
+                CheckProps();
+                var distance = _targetDir.magnitude;
+                if (distance < attackDistance)
+                {
+                
+                    Attack();
+                }
             }
         }
-
-        void Attack()
+        
+        void CheckProps()
         {
-            if (_rightPunchCoolDown > coolDownTime)
+            _checkPropTimer += Time.deltaTime;
+            if (_checkPropTimer > 5.0f)
             {
-                PunchRight();
+                grabLeft = false;
+                grabRight = false;
+                
+                var items = Physics.OverlapSphere(transform.position, 6.0f, (1 << LayerMask.NameToLayer("Props")));
+                foreach (var item in items)
+                {
+                    var prop = item.GetComponent<Props>();
+                    if (prop != null && prop.owner == null)
+                    {
+                        StartCoroutine(TryGrab());
+                    }
+                }
+            }
+
+        }
+
+        IEnumerator TryGrab()
+        {
+            grabLeft = true;
+            grabRight = true;
+            yield return new WaitForSeconds(2.0f);
+            grabLeft = false;
+            grabRight = false;
+        }
+        void CheckGrabbed()
+        {
+            if (_controller.GrabbedLeft(out var grabTag))
+            {
+                if (grabTag == "Player")
+                {
+                    catchPlayer = true;
+                }
+                else
+                {
+                    grabLeft = false;
+                }
+            }
+            if (_controller.GrabbedRight(out grabTag))
+            {
+                if (grabTag == "Player")
+                {
+                    catchPlayer = true;
+                }
+                else
+                {
+                    grabRight = false;
+                }
+            }
+        }
+        
+        void StandBy()
+        {
+            if (_standByTimer > 1.0f)
+            {
+                var randomPoint =transform.position +  Random.insideUnitSphere * 10;
+                NavMesh.SamplePosition (randomPoint, out var navHit, 10.0f, NavMesh.AllAreas);
+                _agent.SetDestination(navHit.position);
+                _standByTimer = 0;
+            }
+
+
+            if (_moveNextDir.magnitude > 0.1f)
+            {
+                moving = true;
+                moveDirection = _moveNextDir;
+                faceDirection = moveDirection;
             }
             else
             {
-                _rightPunchCoolDown += Time.deltaTime;
-            }
-        }
-
-        void PunchRight()
-        {
-            if (!readyPunchingRight && !punchingRight)
-            {
-                readyPunchingRight = true;
-                _readyPunchTimer = 0;
-            }
-            if (readyPunchingRight)
-            {
-                _readyPunchTimer += Time.deltaTime;
-                if (_readyPunchTimer > holdTime)
-                {
-                    readyPunchingRight = false;
-                    punchingRight = true;
-                    punchingRightTimer = 0;
-                }
-            }
-            if (punchingRight)
-            {
-                punchingRightTimer += Time.deltaTime;
-                if (punchingRightTimer > punchHoldTime)
-                {
-                    punchingRight = false;
-                    _rightPunchCoolDown = 0;
-                }
-            }
-        }
-        void PunchLeft()
-        {
-            if (!readyPunchingLeft && !punchingLeft)
-            {
-                readyPunchingLeft = true;
-                _readyPunchTimer = 0;
-            }
-            if (readyPunchingLeft)
-            {
-                _readyPunchTimer += Time.deltaTime;
-                if (_readyPunchTimer > holdTime)
-                {
-                    readyPunchingLeft = false;
-                    punchingLeft = true;
-                    punchingLeftTimer = 0;
-                }
-            }
-            if (punchingLeft)
-            {
-                punchingLeftTimer += Time.deltaTime;
-                if (punchingLeftTimer > punchHoldTime)
-                {
-                    punchingLeft = false;
-                }
+                moving = false;
+                moveDirection = Vector3.zero;
+                faceDirection = moveDirection;
             }
             
         }
-        // Start is called before the first frame update
-        void Start()
+
+        void SearchEdge()
         {
-            _agent = GetComponent<NavMeshAgent>();
+            _agent.FindClosestEdge(out var navHit);
+            _agent.SetDestination(navHit.position);
+            _agent.stoppingDistance = 1f;
+            _edgePosition = navHit.position;
+            _findEdge = true;
+        }
+        
+        void GotoEdgeAndDrop()
+        {
+            Debug.DrawLine(transform.position,_edgePosition,Color.yellow, 3.0f);
+            var distance = (_edgePosition - transform.position).magnitude;
+            if (_moveNextDir.magnitude > 1.0f)
+            {
+                moving = true;
+                accelerating = true;
+                moveDirection = _moveNextDir;
+            }
+            else
+            {
+                moving = true;
+                accelerating = false;
+                moveDirection = Vector3.zero;
+            }
+            faceDirection = Quaternion.AngleAxis(rotationSpeed*Time.deltaTime, Vector3.up) * faceDirection;
+            
+            movingBack = false;
+            if (distance < 2)
+            {
+                DropPlayer();
+            }
+        }
+        
+        void Chase()
+        {
+            _agent.SetDestination(_targetPosition);
+            _agent.stoppingDistance = 1.0f;
+            // Moving: 
+            if (_moveNextDir.magnitude > 0.1f)
+            {
+                moving = true;
+                moveDirection = _moveNextDir;
+                faceDirection = moveDirection;
+            }  
+            else
+            {
+                moving = false;
+                moveDirection = Vector3.zero;
+                faceDirection = _targetDir;
+            }
+            // _agent.isStopped = moveNextDir.magnitude > stopTracingDistance;
+            
+            movingBack = false;
+        }
+        
+        void Grab()
+        {
+            _grabTimer += Time.deltaTime;
+            if(_grabTimer > 0.5f)
+            {            
+                grabLeft = true;
+                grabRight = true;
+                _grabTimer = 0;
+            }
+        }
+        
+        void Attack()
+        {
+            punchTimer += Time.deltaTime;
+            if (punchTimer > punchHoldTime)
+            {
+                punchTimer = 0;
+                if (Random.Range(0.0f, 1.0f) > 0.5f)
+                {
+                    attack = true;
+                }
+            }
+        }
+
+        void Awake()
+        {
+            _agent = GetComponentInChildren<NavMeshAgent>();
             _agent.updatePosition = false;
             _agent.updateRotation = false;
-            _hip = transform.Find("Hips");
+
+            catchPlayer = false;
         }
+
+        void OnDisable()
+        {
+            _agent.enabled = false;
+
+        }
+        
+        void OnEnable()
+        {
+            _agent.enabled = true;
+        }
+
+        void Start()
+        {
+            _agent.enabled = true;
+            _playerController = target.GetComponent<PhysicalBodyController>();
+            _controller = GetComponent<PhysicalBodyController>();
+        }
+
+        void DropPlayer()
+        {
+            var origin = target.position;
+            Debug.DrawLine(origin, origin + Vector3.down * 10.0f);
+            if (!Physics.Raycast(origin, Vector3.down, 10.0f, (1 << LayerMask.NameToLayer("Static Scene"))))
+            {
+                grabLeft = false;
+                grabRight = false;
+                catchPlayer = false;
+                accelerating = false;
+            }
+        }
+        
+        
     }
 }
 
