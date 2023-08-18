@@ -274,10 +274,6 @@ PrefabInstance:
       value: 0.00000047613867
       objectReference: {fileID: 0}
     - target: {fileID: 1622377369075160831, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622377369075160831, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -388,6 +384,10 @@ PrefabInstance:
     - target: {fileID: 1622377369341160801, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622377369341160803, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
+      propertyPath: recoverTime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1622377369341160805, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -864,10 +864,6 @@ PrefabInstance:
     - target: {fileID: 1622377370425827461, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
       propertyPath: m_Layer
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622377370437628930, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1622377370437628930, guid: 7bf713ebc6e7ac449869c84577d58921, type: 3}
       propertyPath: m_TagString

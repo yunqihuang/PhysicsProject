@@ -6,6 +6,7 @@ namespace ActiveRagdoll
 {
     public class CharacterController : MonoBehaviour
     {
+        public GameManager gameManager;
         public float punchHoldTime;
         public bool moving;
         public bool movingBack;
@@ -31,7 +32,10 @@ namespace ActiveRagdoll
         
         private void Update()
         {
-            UpdateInput();
+            if (!gameManager.pause)
+            {
+                UpdateInput();
+            }
         }
     }
 }

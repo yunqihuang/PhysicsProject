@@ -863,18 +863,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -1143,18 +1143,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -1454,18 +1454,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -1697,18 +1697,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -2516,18 +2516,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -3012,18 +3012,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -3184,18 +3184,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -3356,18 +3356,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -3542,6 +3542,7 @@ GameObject:
   - component: {fileID: 1622377368953207250}
   - component: {fileID: 1622377368953207249}
   - component: {fileID: 1622377368953207263}
+  - component: {fileID: 4143879955381314809}
   m_Layer: 6
   m_Name: Animated
   m_TagString: Untagged
@@ -3898,6 +3899,86 @@ MonoBehaviour:
   leftArmIK: {fileID: 1622377368953207251}
   rightArmIK: {fileID: 1622377368953207248}
   aimIK: {fileID: 1622377368953207249}
+--- !u!114 &4143879955381314809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622377368953207261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms:
+  - {fileID: 1622377368953207262}
+  - {fileID: 1622377370472126741}
+  - {fileID: 1622377369699030024}
+  - {fileID: 1622377368995182750}
+  - {fileID: 1622377368965608714}
+  - {fileID: 1622377370454501458}
+  - {fileID: 1622377369471544622}
+  - {fileID: 1622377369891074966}
+  - {fileID: 1622377370766235757}
+  - {fileID: 1622377370090051159}
+  - {fileID: 1622377369019452240}
+  - {fileID: 1622377370493040131}
+  - {fileID: 1622377369304029957}
+  - {fileID: 1622377369797461743}
+  - {fileID: 1622377369954499515}
+  - {fileID: 1622377370453065134}
+  - {fileID: 1622377370813618792}
+  - {fileID: 1622377369527321259}
+  - {fileID: 1622377370297114122}
+  - {fileID: 1622377370022292007}
+  - {fileID: 1622377369197252481}
+  - {fileID: 1622377370378931434}
+  - {fileID: 1622377368777545652}
+  - {fileID: 1622377369543581519}
+  - {fileID: 1622377369547974008}
+  - {fileID: 1622377369475310819}
+  - {fileID: 1622377369720688013}
+  - {fileID: 1622377368913768946}
+  - {fileID: 1622377368759205731}
+  - {fileID: 1622377369702498205}
+  - {fileID: 1622377368802726023}
+  - {fileID: 1622377369527809842}
+  - {fileID: 1622377369317354385}
+  - {fileID: 1622377370483224213}
+  - {fileID: 1622377369142611414}
+  - {fileID: 1622377369742620199}
+  - {fileID: 1622377370353279457}
+  - {fileID: 1622377368683413870}
+  - {fileID: 1622377369670825872}
+  - {fileID: 1622377370401237513}
+  - {fileID: 1622377369065513952}
+  - {fileID: 1622377368959628611}
+  - {fileID: 1622377370468842247}
+  - {fileID: 1622377370218342074}
+  - {fileID: 1622377370825795720}
+  - {fileID: 1622377369494072135}
+  - {fileID: 1622377368718301582}
+  - {fileID: 1622377369979738496}
+  - {fileID: 1622377369394798188}
+  - {fileID: 1622377369725534152}
+  - {fileID: 1622377369598760738}
+  - {fileID: 1622377369275798575}
+  - {fileID: 1622377370714266745}
+  - {fileID: 1622377370248365607}
+  - {fileID: 1622377369425204503}
+  - {fileID: 1622377369840974025}
+  - {fileID: 1622377369180962332}
+  - {fileID: 1622377370654317836}
+  - {fileID: 1622377370569115425}
+  - {fileID: 1622377370415749033}
+  - {fileID: 1622377369371902935}
 --- !u!1 &1622377368957292303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,18 +4088,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -4147,18 +4228,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -4523,18 +4604,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -4698,18 +4779,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -5201,18 +5282,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -5276,7 +5357,8 @@ GameObject:
   - component: {fileID: 1622377369075160819}
   - component: {fileID: 1622377369075160818}
   - component: {fileID: 1622377369075160817}
-  m_Layer: 3
+  - component: {fileID: 8468375298907244459}
+  m_Layer: 12
   m_Name: LeftHand
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5295,10 +5377,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369845786389}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
   - {fileID: 7171364610096304905}
   m_Father: {fileID: 1622377368880933194}
   m_RootOrder: 0
@@ -5449,6 +5527,22 @@ MonoBehaviour:
     m_Bits: 0
   grabbing: 0
   propType: 0
+--- !u!114 &8468375298907244459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622377369075160831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945f666b964f42e8b71e27a6e60712cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  normalVfxPrefab: {fileID: 1221272536104276, guid: 48fb3004a6ae1ef4595938cb84af303a, type: 3}
+  heavyVfxPrefab: {fileID: 1883552001520024, guid: a30cd0ba5c00c6d459196515ec56574a, type: 3}
+  duration: 1
 --- !u!1 &1622377369078433007
 GameObject:
   m_ObjectHideFlags: 0
@@ -6061,18 +6155,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -6773,34 +6867,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   anim: {fileID: 1622377368953207252}
-  basicDrive: {x: 100, y: 10}
+  basicDrive: {x: 500, y: 10}
   hipDrive: {x: 2500, y: 10}
-  armDrive: {x: 600, y: 50}
+  armDrive: {x: 1000, y: 40}
   legDrive: {x: 1000, y: 15}
   trunkDrive: {x: 2000, y: 15}
-  rotationTorque: 3000
-  punchForce: 250
-  swingForce: 700
+  rotationTorque: 500
+  punchForce: 450
+  swingForce: 800
   jumpForce: 30
   balanceForce: 1000
   footHeight: 1
-  _knockout: 0
-  _moving: 0
-  _grounded: 0
-  _jumping: 0
-  _accelerating: 0
-  _punching: 0
-  _swing: 0
-  _walkBack: 0
-  _walkForward: 0
-  _stepRight: 0
-  _stepLeft: 0
-  _fall: 0
-  Step_R_Time: 0
-  Step_L_Time: 0
   rideSpringStrength: 100
   rideSpringDamper: 10
-  accelerationFactor: 1.5
+  accelerationFactor: 1.7
   maxSpeed: 8
   acceleration: 100
   accelerationFromDot:
@@ -7681,15 +7761,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622377369191131444}
-  m_LocalRotation: {x: -0.00000009185923, y: -0.000000008936912, z: 0.21320277, w: 0.977008}
-  m_LocalPosition: {x: -0.196, y: -0.032, z: 0}
+  m_LocalRotation: {x: -0.00000008082535, y: -0.00000004724975, z: 0.17554945, w: 0.9844706}
+  m_LocalPosition: {x: -0.23, y: -0.019, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1622377369341160802}
   m_Father: {fileID: 1622377370626286374}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.62}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.221}
 --- !u!54 &1622377369191131445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8178,18 +8258,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -8764,18 +8844,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -9133,37 +9213,6 @@ Transform:
   m_Father: {fileID: 1622377369598760738}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1622377369288690551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369288690504}
-  m_Layer: 3
-  m_Name: drill_l
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369288690504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369288690551}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: -0.11008295, y: -0.009449474, z: 0.0006042766}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377369075160816}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377369293344089
 GameObject:
   m_ObjectHideFlags: 0
@@ -9305,18 +9354,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -9647,18 +9696,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -9678,37 +9727,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000059604645, y: 0.004032314, z: 0.9532265}
     m_Extent: {x: 1.4501212, y: 0.27808768, z: 0.25729126}
   m_DirtyAABB: 0
---- !u!1 &1622377369330320919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369330321000}
-  m_Layer: 3
-  m_Name: saw_l
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369330321000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369330320919}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: -0.13957767, y: -0.0022430373, z: 0.00047288262}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377369075160816}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377369332458950
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,10 +10137,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.4
-  m_Height: 1.15
+  m_Radius: 0.45640114
+  m_Height: 1.2595344
   m_Direction: 0
-  m_Center: {x: 0.1, y: 0, z: 0}
+  m_Center: {x: 0.15497516, y: -0.015950525, z: 0.000000015068153}
 --- !u!114 &1622377369341160803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10138,10 +10156,10 @@ MonoBehaviour:
   activeRagDoll: {fileID: 1622377369165494733}
   hitLayerMask:
     serializedVersion: 2
-    m_Bits: 2312
+    m_Bits: 4352
   controller: {fileID: 1622377369165494734}
   knockOutThreshold: 1500
-  recoverTime: 10
+  recoverTime: 5
   accumulateHitForce: 0
   _recover: 0
 --- !u!1 &1622377369351921431
@@ -10257,37 +10275,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1622377368953207262}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1622377369376047799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369376047752}
-  m_Layer: 3
-  m_Name: saw_r
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369376047752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369376047799}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: 0.13957906, y: 0.0022421728, z: -0.00047287406}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377370437628931}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377369379119761
 GameObject:
@@ -11067,18 +11054,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -11379,18 +11366,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -12094,18 +12081,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -12607,18 +12594,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -13237,18 +13224,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -13408,37 +13395,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.23509988, z: 1.254551}
     m_Extent: {x: 0.13601391, y: 0.04583767, z: 0.04602897}
   m_DirtyAABB: 0
---- !u!1 &1622377369594113155
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369594113156}
-  m_Layer: 3
-  m_Name: upperJaw_r
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369594113156
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369594113155}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: 0.24130988, y: 0.13323241, z: -0.0005894659}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377370437628931}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377369598760737
 GameObject:
   m_ObjectHideFlags: 0
@@ -13887,18 +13843,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -14441,18 +14397,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -14752,18 +14708,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -15715,18 +15671,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -15995,18 +15951,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -16311,18 +16267,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -16591,18 +16547,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -16731,18 +16687,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -16903,18 +16859,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -17074,37 +17030,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.3595386, z: 1.291078}
     m_Extent: {x: 0.111832805, y: 0.21007359, z: 0.15362847}
   m_DirtyAABB: 0
---- !u!1 &1622377369845786388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369845786389}
-  m_Layer: 3
-  m_Name: LowerJaw_l
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369845786389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369845786388}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: -0.27837098, y: 0.14700453, z: -0.00056984223}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377369075160816}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377369846052399
 GameObject:
   m_ObjectHideFlags: 0
@@ -17930,18 +17855,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -18668,18 +18593,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -18808,18 +18733,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -18839,37 +18764,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.20266125, z: 1.3463244}
     m_Extent: {x: 0.16748717, y: 0.10955128, z: 0.17540497}
   m_DirtyAABB: 0
---- !u!1 &1622377369999036413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377369999036414}
-  m_Layer: 3
-  m_Name: LowerJaw_r
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377369999036414
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377369999036413}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: 0.27836862, y: -0.14700456, z: 0.0005698343}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377370437628931}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377370017696767
 GameObject:
   m_ObjectHideFlags: 0
@@ -19436,18 +19330,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -19997,18 +19891,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -20605,18 +20499,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -20745,18 +20639,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -21222,18 +21116,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -21618,18 +21512,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -22048,18 +21942,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -22494,18 +22388,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -22666,18 +22560,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -22759,37 +22653,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1622377370297114122}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1622377370386227377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377370386227378}
-  m_Layer: 3
-  m_Name: drill_r
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377370386227378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377370386227377}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: 0.110078454, y: 0.009448838, z: -0.0006042899}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377370437628931}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377370395525573
 GameObject:
@@ -23430,18 +23293,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -23754,7 +23617,8 @@ GameObject:
   - component: {fileID: 1622377370437628934}
   - component: {fileID: 1622377370437628933}
   - component: {fileID: 1622377370437628932}
-  m_Layer: 3
+  - component: {fileID: 8163755468601034970}
+  m_Layer: 12
   m_Name: RightHand
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -23773,10 +23637,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369999036414}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
   - {fileID: 4557760666776471970}
   m_Father: {fileID: 1622377369395453810}
   m_RootOrder: 0
@@ -23927,6 +23787,22 @@ MonoBehaviour:
     m_Bits: 0
   grabbing: 0
   propType: 0
+--- !u!114 &8163755468601034970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622377370437628930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945f666b964f42e8b71e27a6e60712cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  normalVfxPrefab: {fileID: 1221272536104276, guid: 48fb3004a6ae1ef4595938cb84af303a, type: 3}
+  heavyVfxPrefab: {fileID: 1883552001520024, guid: a30cd0ba5c00c6d459196515ec56574a, type: 3}
+  duration: 1
 --- !u!1 &1622377370443567411
 GameObject:
   m_ObjectHideFlags: 0
@@ -24036,18 +23912,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -24423,7 +24299,7 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 0
+  m_AngularXMotion: 1
   m_AngularYMotion: 0
   m_AngularZMotion: 0
   m_LinearLimitSpring:
@@ -24437,7 +24313,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -2
+    limit: -15
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
@@ -24512,8 +24388,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.38819727, y: 0.8157735, z: 0.7827606}
-  m_Center: {x: -0.18049856, y: -0.00053370453, z: 0.025072807}
+  m_Size: {x: 0.38819727, y: 0.73401225, z: 0.7137985}
+  m_Center: {x: -0.18049856, y: 0.0006890858, z: 0.023763828}
 --- !u!1 &1622377370468842246
 GameObject:
   m_ObjectHideFlags: 0
@@ -24921,18 +24797,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -24952,37 +24828,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00000011920929, y: 0.04528922, z: 0.8206737}
     m_Extent: {x: 1.3458344, y: 0.61795, z: 0.8410951}
   m_DirtyAABB: 0
---- !u!1 &1622377370507454133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622377370507454134}
-  m_Layer: 3
-  m_Name: upperJaw_l
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622377370507454134
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622377370507454133}
-  m_LocalRotation: {x: 0.70580983, y: -0.0022091598, z: 0.0003184791, w: 0.7083978}
-  m_LocalPosition: {x: -0.24131815, y: -0.13323142, z: 0.0005894331}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1622377369075160816}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622377370519564831
 GameObject:
   m_ObjectHideFlags: 0
@@ -25175,18 +25020,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -25315,18 +25160,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -25455,18 +25300,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -25870,18 +25715,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -26010,18 +25855,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -26068,7 +25913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622377370626286370}
   m_LocalRotation: {x: -1.3548951e-16, y: 4.5886806e-17, z: -0.08148055, w: 0.99667495}
-  m_LocalPosition: {x: -0.412, y: -0.043, z: 0}
+  m_LocalPosition: {x: -0.478, y: 0.005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26201,8 +26046,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18378448, y: 0.6418449, z: 0.5597696}
-  m_Center: {x: -0.097207665, y: 0.00011855914, z: -0.0028839868}
+  m_Size: {x: 0.18378448, y: 0.5704989, z: 0.4919355}
+  m_Center: {x: -0.09728955, y: -0.0050042295, z: 0.008349673}
 --- !u!1 &1622377370631112436
 GameObject:
   m_ObjectHideFlags: 0
@@ -26756,18 +26601,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -27036,18 +26881,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -27290,18 +27135,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -28364,18 +28209,18 @@ SkinnedMeshRenderer:
   - {fileID: 1622377368698100594}
   - {fileID: 1622377368880933194}
   - {fileID: 1622377369075160816}
-  - {fileID: 1622377369288690504}
-  - {fileID: 1622377369330321000}
-  - {fileID: 1622377370507454134}
-  - {fileID: 1622377369845786389}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369617894447}
   - {fileID: 1622377370570195768}
   - {fileID: 1622377369395453810}
   - {fileID: 1622377370437628931}
-  - {fileID: 1622377370386227378}
-  - {fileID: 1622377369376047752}
-  - {fileID: 1622377369594113156}
-  - {fileID: 1622377369999036414}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1622377369389523509}
   - {fileID: 1622377369525355556}
   - {fileID: 1622377369096994609}
@@ -28487,7 +28332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7171364610096304905}
-  m_Layer: 3
+  m_Layer: 12
   m_Name: holdAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28507,7 +28352,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1622377369075160816}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180, y: 20, z: 0}
 --- !u!1 &7225534428127334763
 GameObject:
@@ -28518,7 +28363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4557760666776471970}
-  m_Layer: 3
+  m_Layer: 12
   m_Name: holdAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28538,5 +28383,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1622377370437628931}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}

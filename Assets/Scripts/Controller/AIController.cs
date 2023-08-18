@@ -70,16 +70,13 @@ namespace ActiveRagdoll
                 return;
             }
             
-            grabLeft = false;
-            grabRight = false;
-            catchPlayer = false;
-            moving = false;
             
-
             if (_playerController.knockedOut)
             {
                 if (id == enemyManager.leader)
                 {
+                    
+                    CheckGrabbed();
                     if (catchPlayer)
                     {
                         if (!_findEdge)
@@ -98,19 +95,23 @@ namespace ActiveRagdoll
                         Grab();
                     }
 
-                    CheckGrabbed();
                 }
                 else
                 {
+                    grabLeft = grabRight = false;
+                    catchPlayer = false;
                     StandBy();
                 }
             }
             else
             {               
 
+                grabLeft = grabRight = false;
+                catchPlayer = false;
+                
                 Chase();
-
                 CheckProps();
+                
                 var distance = _targetDir.magnitude;
                 if (distance < attackDistance)
                 {
@@ -127,7 +128,11 @@ namespace ActiveRagdoll
             {
                 grabLeft = false;
                 grabRight = false;
-                
+
+                if (_controller.IsGrabbingProps())
+                {
+                    return;
+                }
                 var items = Physics.OverlapSphere(transform.position, 6.0f, (1 << LayerMask.NameToLayer("Props")));
                 foreach (var item in items)
                 {
@@ -151,6 +156,7 @@ namespace ActiveRagdoll
         }
         void CheckGrabbed()
         {
+            catchPlayer = false;
             if (_controller.GrabbedLeft(out var grabTag))
             {
                 if (grabTag == "Player")
@@ -160,6 +166,7 @@ namespace ActiveRagdoll
                 else
                 {
                     grabLeft = false;
+
                 }
             }
             if (_controller.GrabbedRight(out grabTag))
@@ -196,15 +203,14 @@ namespace ActiveRagdoll
             {
                 moving = false;
                 moveDirection = Vector3.zero;
-                faceDirection = moveDirection;
+                faceDirection = transform.forward;
             }
-            
+ 
         }
 
         void SearchEdge()
         {
             _agent.FindClosestEdge(out var navHit);
-            _agent.SetDestination(navHit.position);
             _agent.stoppingDistance = 1f;
             _edgePosition = navHit.position;
             _findEdge = true;
@@ -214,7 +220,8 @@ namespace ActiveRagdoll
         {
             Debug.DrawLine(transform.position,_edgePosition,Color.yellow, 3.0f);
             var distance = (_edgePosition - transform.position).magnitude;
-            if (_moveNextDir.magnitude > 1.0f)
+            _agent.SetDestination(_edgePosition);
+            if (_moveNextDir.magnitude > 0.1f)
             {
                 moving = true;
                 accelerating = true;
@@ -226,11 +233,11 @@ namespace ActiveRagdoll
                 accelerating = false;
                 moveDirection = Vector3.zero;
             }
-            faceDirection = Quaternion.AngleAxis(rotationSpeed*Time.deltaTime, Vector3.up) * faceDirection;
             
             movingBack = false;
-            if (distance < 2)
+            if (distance < 2.0f)
             {
+                faceDirection = Quaternion.AngleAxis(rotationSpeed*Time.deltaTime, Vector3.up) * faceDirection;
                 DropPlayer();
             }
         }

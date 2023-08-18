@@ -55,11 +55,11 @@ namespace ActiveRagdoll
             }
             
             
-            if (_targetProp == null)
+            if (_targetProp == null || (_targetProp !=null && _targetProp.owner != null))
             {
                 DetectEquipment(out var propPoint);
                 _targetProp = propPoint;
-                grabLayer = LayerMask.GetMask("Props", "Static Scene","Trunk", "Head");
+                grabLayer = LayerMask.GetMask("Props", "Static Scene","Trunk", "Head", "Fist");
             }
             else
             { 
@@ -97,7 +97,7 @@ namespace ActiveRagdoll
             if (Physics.SphereCast(transform.position, 0.6f, Vector3.down ,out var hitInfo, 3.0f, grabLayer))
             {
                 equipment = hitInfo.transform.GetComponent<Props>();
-                if (equipment != null)
+                if (equipment != null && equipment.owner != null)
                 {
                     Debug.DrawLine(transform.position, hitInfo.point);
                     // Debug.Log($"{equipment.name}, {equipment.transform.position}");
@@ -134,7 +134,7 @@ namespace ActiveRagdoll
 
 
             props  = obj.GetComponent<Props>();
-            if (props != null)
+            if (props != null && props.owner == null)
             {
                 Debug.Log(props.transform.parent);
                 props.transform.SetParent( _handRigBody.transform, true);

@@ -7,8 +7,9 @@ namespace ActiveRagdoll
 {
     internal class CameraController : MonoBehaviour
     {
+	    public GameManager gameManager;
         public Transform target;
-      [Header("Position")]
+		[Header("Position")]
 		public bool smoothFollow; // If > 0, camera will smoothly interpolate towards the target
 		public Vector3 offset = new Vector3(0, 1.5f, 0.5f); // The offset from target relative to camera rotation
 		public float followSpeed = 10f; // Smooth follow speed
@@ -81,11 +82,17 @@ namespace ActiveRagdoll
 
 		private void Update()
 		{
-			UpdateTransform();
+			if (!gameManager.pause)
+			{
+				UpdateTransform();
+			}
 		}
 
 		protected virtual void LateUpdate() {
-			UpdateInput();
+			if (!gameManager.pause)
+			{
+				UpdateInput();
+			}
 		}
 
 		// Read the user input
@@ -93,7 +100,7 @@ namespace ActiveRagdoll
 			if (!cam.enabled) return;
 
 			// Cursors
-			Cursor.lockState = lockCursor? CursorLockMode.Locked: CursorLockMode.None;
+			Cursor.lockState = lockCursor? CursorLockMode.Confined: CursorLockMode.None;
 			Cursor.visible = lockCursor? false: true;
 
 			// Should we rotate the camera?

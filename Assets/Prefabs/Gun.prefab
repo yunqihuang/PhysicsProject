@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 6163350872767313316}
   m_Layer: 8
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,4 +204,4 @@ MonoBehaviour:
   fireStart: {fileID: 6655345905733364976}
   force: 300
   range: 50
-  angle: 90
+  angle: 45

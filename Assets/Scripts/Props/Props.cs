@@ -21,7 +21,7 @@ namespace ActiveRagdoll
         public Vector3 originScale;
 
 
-        private void Start()
+        void Start()
         {
             originScale = transform.localScale;
         }

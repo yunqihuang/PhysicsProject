@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -2453773812345524139}
   - component: {fileID: -5899393765961683194}
   - component: {fileID: 6082804116865686549}
+  - component: {fileID: -2947260607947390371}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -98,7 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7854cf4dae9f34e83cf6616b5e08ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastTime: 5
+  owner: {fileID: 0}
+  isActive: 0
+  propType: 0
+  _contactPoint: {fileID: 0}
+  originScale: {x: 0, y: 0, z: 0}
+  duration: 5
   mass: 5
 --- !u!54 &-5899393765961683194
 Rigidbody:
@@ -129,3 +135,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.058332585
   m_Center: {x: 0, y: 0.058332585, z: 0}
+--- !u!114 &-2947260607947390371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090094865254384753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945f666b964f42e8b71e27a6e60712cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  normalVfxPrefab: {fileID: 1221272536104276, guid: 48fb3004a6ae1ef4595938cb84af303a, type: 3}
+  heavyVfxPrefab: {fileID: 1883552001520024, guid: a30cd0ba5c00c6d459196515ec56574a, type: 3}
+  duration: 1

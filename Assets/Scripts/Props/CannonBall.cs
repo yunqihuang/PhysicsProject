@@ -9,7 +9,7 @@ using UnityEngine;
 public class CannonBall : MonoBehaviour
 {
     public LayerMask layerMask;
-    public int lastTime;
+    public int duration;
     public float mass;
     public float radius;
     public float power;
@@ -20,7 +20,7 @@ public class CannonBall : MonoBehaviour
     void Start()
     {
 
-        Destroy(gameObject, lastTime);
+        Destroy(gameObject, duration);
     }
 
     private void Awake()

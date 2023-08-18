@@ -22,9 +22,14 @@ namespace ActiveRagdoll
         internal static readonly string[] Arms;
         internal static readonly string[] Trunks;
         internal static readonly string[] Legs;
-
+        internal static readonly string[] Heads;
         public bool knockedOut => _knockout;
-
+        public bool moving => _moving;
+        public bool jumping => _jumping;
+        public bool punching => _punching;
+        
+        
+        
         public bool enableAnimControlMovement;
         [SerializeField] private Transform _punchTarget;
         [SerializeField] private Transform _swingTarget,_swingUpTarget;
@@ -49,27 +54,16 @@ namespace ActiveRagdoll
         private CharacterController characterController;
         
         [Header("States")]
-        [SerializeField]
         private bool _knockout;
-        [SerializeField]
         private bool _moving;
-        [SerializeField]
         private bool _grounded;
-        [SerializeField]
         private bool _jumping;
-        [SerializeField]
         private bool _accelerating;
-
-        [SerializeField] 
         private bool _punching;
-        
-        [SerializeField] 
         private bool _swing;
         
-        [SerializeField]
         private bool _walkBack, _walkForward, _stepRight,_stepLeft, _fall;
-        [SerializeField]
-        float Step_R_Time, Step_L_Time;
+        private float Step_R_Time, Step_L_Time;
 
 
         [Header("Moving Parameter")]
@@ -133,7 +127,9 @@ namespace ActiveRagdoll
         
         private GrabController leftHandGrabController;
         private GrabController rightHandGrabController;
-        
+
+        private DamageEffect _leftFistDamage;
+        private DamageEffect _rightFistDamage;
 
         private IKManager _ikManager;
         static PhysicalBodyController()
@@ -144,13 +140,18 @@ namespace ActiveRagdoll
                 "LeftForeArm","RightForeArm",
                 "LeftHand", "RightHand"
             };
-            Trunks = new[] {"Hips", "Spine", "Chest", "UpperChest",  "Neck", "Head" };
+            Trunks = new[] {"Hips", "Spine", "Chest","UpperChest", "Neck"};
 
             Legs = new[]
             {
                 "LeftUpLeg", "RightUpLeg",
                 "LeftLeg", "RightLeg",
                 "LeftFoot", "RightFoot",
+            };
+
+            Heads = new[]
+            {
+                "Head"
             };
         }
         void OnEnable()
@@ -166,8 +167,13 @@ namespace ActiveRagdoll
             faceDirection = bodyDirection = transform.forward;
             leftHandGrabController = _skeleton["LeftHand"].Joint.GetComponent<GrabController>();
             rightHandGrabController = _skeleton["RightHand"].Joint.GetComponent<GrabController>();
+            
             leftHandGrabController.enabled = false;
             rightHandGrabController.enabled = false;
+            
+            _leftFistDamage = _skeleton["LeftHand"].Joint.GetComponent<DamageEffect>();
+            _rightFistDamage = _skeleton["RightHand"].Joint.GetComponent<DamageEffect>();
+
             _fallDistance = 5.0f;
         }
         
@@ -371,11 +377,12 @@ namespace ActiveRagdoll
                 _rootJoint.RigBody.AddForce(Vector3.Scale(neededAccel * _totalMass, forceScale));
             
                 bodyDirection =  Vector3.Slerp(bodyDirection, moveDirection , 0.2f);
-                var backwardFactor = Vector3.Dot(bodyDirection, bodyUp) > 0.1f ? -1 : 1;
-                var forceDirection = Vector3.ProjectOnPlane(backwardFactor * bodyDirection, bodyUp);
+               
+                // var backwardFactor = Vector3.Dot(bodyDirection, bodyUp) > 0.1f ? -1 : 1;
+                // var forceDirection = Vector3.ProjectOnPlane(backwardFactor * bodyDirection, bodyUp);
+                // faceDirection = Vector3.Slerp(faceDirection,characterController.faceDirection.normalized,0.8f);
                 
-                faceDirection = Vector3.Slerp(faceDirection,characterController.faceDirection.normalized,0.8f);
-
+                faceDirection  = characterController.faceDirection.normalized;
             }
             
 
@@ -392,15 +399,17 @@ namespace ActiveRagdoll
         #region Actions
         void Attack()
         {
+
             anim.SetLayerWeight(anim.GetLayerIndex("UpperBody"), 1.0f);
-            
             if (leftHandGrabController.propType == PropType.Equipment || rightHandGrabController.propType == PropType.Equipment)
             {
-                anim.SetTrigger(leftHandGrabController.propType == PropType.Equipment ? "leftSwing" : "rightSwing");
-                leftHandGrabController.ActivateProps();
-                rightHandGrabController.ActivateProps();
-                _swing = true;
-                
+                if (!_swing)
+                {
+                    anim.SetTrigger(leftHandGrabController.propType == PropType.Equipment ? "leftSwing" : "rightSwing");
+                    leftHandGrabController.ActivateProps();
+                    rightHandGrabController.ActivateProps();
+                    _swing = true;
+                }
             }else if (leftHandGrabController.propType == PropType.Gun || rightHandGrabController.propType == PropType.Gun)
             {
                 anim.SetTrigger(leftHandGrabController.propType == PropType.Gun ? "leftFire" : "rightFire");
@@ -409,6 +418,7 @@ namespace ActiveRagdoll
             {
                 // punch
                 _punching = true;
+
                 anim.SetTrigger(_lastPunchLeft ? "rightPunch" : "leftPunch");
                 _lastPunchLeft = !_lastPunchLeft;
             }
@@ -513,8 +523,10 @@ namespace ActiveRagdoll
                 {
                     var hand=  _punchRight ?  _skeleton["RightHand"] : _skeleton["LeftHand"];
                     var shoulder=  _punchRight ?  _skeleton["RightShoulder"] : _skeleton["LeftShoulder"];
-                    var forceDir = (_punchTarget.position - hand.RigBody.position);
                     
+                    var damage = _punchRight ?  _rightFistDamage : _leftFistDamage;
+                    damage.isActive = true;
+                    var forceDir = (_punchTarget.position - hand.RigBody.position);
                     hand.RigBody.AddForce(punchForce * forceDir);
                     shoulder.RigBody.AddForce(-punchForce * forceDir);
                    // _skeleton["LeftFoot"].RigBody.AddForce(Vector3.down * balanceForce);
@@ -523,6 +535,7 @@ namespace ActiveRagdoll
                 if (_punchTimer > 1.0f)
                 {
                     _punching = false;
+                    _leftFistDamage.isActive = _rightFistDamage.isActive = false;
                     anim.SetLayerWeight(anim.GetLayerIndex("UpperBody"), 0.0f);
                     _punchTimer = 0;
                 }
@@ -532,6 +545,7 @@ namespace ActiveRagdoll
         {
             if (_swing)
             {
+                _leftFistDamage.isActive = _rightFistDamage.isActive = true;
                 _swingTimer += Time.fixedDeltaTime;
                 if (_swingLeftUp || _swingRightUp)
                 {
@@ -575,10 +589,11 @@ namespace ActiveRagdoll
                     //  _skeleton["RightFoot"].RigBody.AddForce(Vector3.down * balanceForce);
 
                 }
-                if (_swingTimer > 1.0f)
+                if (_swingTimer > 0.8f)
                 {
                     _swing = false;
                     anim.SetLayerWeight(anim.GetLayerIndex("UpperBody"), 0.0f);
+                    _leftFistDamage.isActive = _rightFistDamage.isActive = false;
                     leftHandGrabController.DeactivateProps();
                     rightHandGrabController.DeactivateProps();
                     _swingTimer = 0;
@@ -872,6 +887,12 @@ namespace ActiveRagdoll
             {
                 Utils.SetJointStrength(_skeleton[joint].Joint, _targetTrunkDrive.x,_targetTrunkDrive.x, _targetTrunkDrive.y);
             }
+
+            foreach (var joint in Heads)
+            {
+                Utils.SetJointStrength(_skeleton[joint].Joint, _targetTrunkDrive.x,_targetTrunkDrive.x, _targetTrunkDrive.y);
+            }
+            
             var hipDriveSpring = _skeleton["Hips"].Joint.angularXDrive.positionSpring;
             hipDriveSpring = Mathf.Lerp(hipDriveSpring, _targetHipDrive.x, 0.1f);
             Utils.SetJointStrength(_skeleton["Hips"].Joint, hipDriveSpring, hipDriveSpring, _targetHipDrive.y);
@@ -887,11 +908,15 @@ namespace ActiveRagdoll
         public void Knockout()
         {
             _knockout = true;
-            characterController.enabled = false;
+            
+            _moving = _grabbingLeft = _grabbingRight = _swing = _punching = _jumping = false;
+            _leftFistDamage.isActive = _rightFistDamage.isActive = false;
             leftHandGrabController.DropEquipment();
             rightHandGrabController.DropEquipment();
             leftHandGrabController.enabled = false;
             rightHandGrabController.enabled = false;
+            characterController.enabled = false;
+            
             //_rootJoint.RigBody.mass = 0.3f;
             Utils.SetJointStrength(_rootJoint.Joint, 0,0,1f);
             foreach (var joint in Arms)
@@ -902,13 +927,17 @@ namespace ActiveRagdoll
             foreach (var joint in Trunks)
             {
                 //_skeleton[joint].RigBody.mass = 0.3f;
-                Utils.SetJointStrength(_skeleton[joint].Joint, 0,0,1f);
+                Utils.SetJointStrength(_skeleton[joint].Joint, 0,0,3f);
+            }
+            foreach (var joint in Heads)
+            {
+                Utils.SetJointStrength(_skeleton[joint].Joint, 0,0,3f);
             }
             //_skeleton["Head"].RigBody.mass = 1.2f;
             foreach (var joint in Legs)
             {
                 //_skeleton[joint].RigBody.mass = 0.2f;
-                Utils.SetJointStrength(_skeleton[joint].Joint, 0,0, 10f);
+                Utils.SetJointStrength(_skeleton[joint].Joint, 0,0, 20f);
             }
         }
         public void Recover(){
@@ -933,6 +962,17 @@ namespace ActiveRagdoll
             return leftHandGrabController.grabbing;
         }
         
+        public bool IsGrabbing()
+        {
+            return GrabbedRight(out _) || GrabbedLeft(out _);
+        }
+        
+        public bool IsGrabbingProps()
+        {
+            GrabbedRight(out var rightTag);
+            GrabbedLeft(out var leftTag);
+            return rightTag == "Props" || leftTag == "Props";
+        }
         void ComputeCenterOfMass()
         {
             Vector3 centerPos = _rootJoint.RigBody.position * _rootJoint.InitialMass;
@@ -944,6 +984,7 @@ namespace ActiveRagdoll
             centerPos /= _totalMass;
             _centerOfMass =  centerPos;
         }
+        
         
         
 
@@ -1019,7 +1060,6 @@ namespace ActiveRagdoll
         
         public void SetFireState(bool b)
         {
-            
             anim.SetBool("fire", b);
         }
         

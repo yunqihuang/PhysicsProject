@@ -33,6 +33,7 @@ namespace ActiveRagdoll
             // Facing: 
             if (moving)
             {
+                // faceDirection = moveDirection;
                 faceDirection = moveDirection;
             }
 

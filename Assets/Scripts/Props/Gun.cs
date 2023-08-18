@@ -50,17 +50,28 @@ namespace ActiveRagdoll
         
         void Fire()
         {
+            var height = 2f;
+            var forward = owner.forward;
+            var targetPosition = owner.position + range * forward+ height * Vector3.up;
+            var origin = fireStart.position;
 
+            var hits = Physics.OverlapSphere(origin, range, canHitLayer);
+            foreach (var item in hits)
+            {
+                var targetPos = item.transform.position;
+                var dir = (targetPos - origin).normalized;
+                var cosValue = Vector3.Dot(dir, forward);
+                Debug.Log($"detect {item.transform.name}, {cosValue},{Mathf.Cos(Mathf.Deg2Rad * angle)}");
+                if (!item.transform.IsChildOf(owner) && cosValue > Mathf.Cos(Mathf.Deg2Rad * angle))
+                {
+                    targetPosition = item.transform.position;
+                }
+            }
+            
+            /*
             float length = range * 2 * Mathf.PI / (360 / angle);
             int rayCount = (int)length;
             float space = angle / rayCount;
-            
-            var height = 2f;
-            var forward = _body.faceDirection;
-            var targetPosition = owner.position + range * forward+ height * Vector3.up;
-            var origin = fireStart.position;
-            
-            
             for (int i = 0; i < rayCount + Convert.ToInt32(angle != 360); i++)
             {
 
@@ -76,13 +87,13 @@ namespace ActiveRagdoll
                     }
                 }
             }
-
+            */
             transform.LookAt(targetPosition);
 
             fireStart.LookAt(targetPosition);
             var rot = fireStart.rotation * Quaternion.Euler(90, 0, 0);
             GameObject bullet = Instantiate(prefab, fireStart.position, rot);
-            bullet.GetComponent<Bullet>().Launch(fireStart.forward, force);
+            bullet.GetComponent<Bullet>().Launch(owner, fireStart.forward, force);
         }
     }
 }

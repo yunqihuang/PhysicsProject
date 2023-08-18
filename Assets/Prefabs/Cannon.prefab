@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1658611140442441800, guid: 2d135e8a60536e140b1a3e7453af9367, type: 3}
   fireStart: {fileID: 2575117597380256203}
-  duration: 5
+  duration: 10
   minForce: 200
   maxForce: 350
 --- !u!1 &8050138861145220520

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 using UnityEngine.Serialization;
 
 namespace ActiveRagdoll
@@ -11,6 +12,9 @@ namespace ActiveRagdoll
         public PhysicalBodyController controller;
         public float knockOutThreshold;
         public float recoverTime;
+        
+        
+        
         
         [SerializeField]
         private float accumulateHitForce;
@@ -71,28 +75,38 @@ namespace ActiveRagdoll
                 && !col.rigidbody.transform.IsChildOf(activeRagDoll))
             {
                 var layer = col.rigidbody.gameObject.layer;
-                if (hitLayerMask == (hitLayerMask | (1 << layer)))
+                if ((hitLayerMask & (1 << layer)) > 0)
                 {
-                    
-                    var contactNormal = col.GetContact(0).normal;
-                    var hitForce = Mathf.Abs(Vector3.Dot(col.impulse / Time.fixedDeltaTime, contactNormal));
-
-                    var propTrigger = col.gameObject.GetComponent<Props>();
-                    
-                    if (propTrigger != null)
+                    var damageEffect = col.gameObject.GetComponent<DamageEffect>();
+                    if (damageEffect != null && damageEffect.isActive)
                     {
-                        // Debug.Log($"{activeRagDoll.name} get hit by {propTrigger.owner}, hitter: {col.gameObject.name}, force:{hitForce}");
-                        if (activeRagDoll == propTrigger.owner)
+                        var contactPosition = col.GetContact(0).point;
+                        var contactNormal = col.GetContact(0).normal;
+                        var hitForce = Mathf.Abs(col.impulse.magnitude / Time.fixedDeltaTime);
+
+                        var propTrigger = col.gameObject.GetComponent<Props>();
+
+                        //Additional Force:
+                        GetComponent<Rigidbody>().AddForceAtPosition(col.impulse, contactPosition, ForceMode.Impulse);
+                        if (propTrigger != null)
                         {
-                            hitForce = 0;
+                            if (activeRagDoll == propTrigger.owner || !propTrigger.isActive)
+                            {
+                                hitForce = 0;
+                            }
                         }
-                        else if (propTrigger.isActive)
-                        {
-                            hitForce *= 3;
-                        }
+
+
+                        Debug.Log($"{transform.root.name} get hit by {col.transform.root.name}, force:{hitForce}");
+                        
+                        damageEffect.SpawnVFX(contactPosition, contactNormal, hitForce > knockOutThreshold);
+                        
+                        // accumulateHitForce += Mathf.Abs(hitForce);
+                        accumulateHitForce = hitForce;
+                        
                     }
-                    // accumulateHitForce += Mathf.Abs(hitForce);
-                    accumulateHitForce = hitForce;
+                    
+
                 }
             }
             // Debug.Log($"{col.impulse}, ${collisionForce}, {Time.fixedDeltaTime}");
