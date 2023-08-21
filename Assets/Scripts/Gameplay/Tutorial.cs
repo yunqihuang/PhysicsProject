@@ -65,6 +65,12 @@ namespace Gameplay
                         _stage++;
                     break;
                 }
+                case 6:
+                {
+                    if (bodyController.accelerating)
+                        _stage++;
+                    break;
+                }
 
             }
         }
@@ -84,37 +90,43 @@ namespace Gameplay
             {
                 case 0:
                 {
-                    hintText = "Welcome! Press W/A/S/D to move";
+                    // hintText = "Welcome! Press W/A/S/D to move";
+                    hintText = "欢迎！请使用W/A/S/D键进行人物移动";
                     break;
                 }
                 case 1:
                 {
-                    hintText = "Click left mouse button to Attack";
+                    hintText = "单击鼠标左键来进行攻击";
                     break;
                 }
                 case 2:
                 {
-                    hintText = "Hold left/right mouse button to grab something";
+                    hintText = "长按鼠标左键或右键，来抓住物体";
                     break;
                 }
                 case 3:
                 {
-                    hintText = "When your hands are close to a prop, you can hold left/right mouse button to pick it up";
+                    hintText = "当您的手靠近道具时，可以按住鼠标左/右键将其拾起";
                     break;
                 }
                 case 4:
                 {
-                    hintText =  "Press F to drop the props";
+                    hintText =  "按F键可以丢弃手中的道具";
                     break;
                 }
                 case 5:
                 {
-                    hintText = "Press space to jump";
+                    hintText = "按空格键起跳";
                     break;
                 }
                 case 6:
                 {
-                    hintText = "Good job! Now you are ready to start your adventure!";
+                    hintText = "按左Shift键可以加速跑";
+                    break;
+                }
+                case 7:
+                {
+                    hintText = "干的不错！现在请开始你的冒险吧！";
                     break;
                 }
             }

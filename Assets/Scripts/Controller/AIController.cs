@@ -42,13 +42,14 @@ namespace ActiveRagdoll
 
         private PhysicalBodyController _controller;
         private PhysicalBodyController _playerController;
-
+        private float _attackDistance;
 
         [SerializeField]
         private Vector3 _edgePosition;
         [SerializeField]
         private bool _findEdge;
-        
+
+        private Vector3 _randomPoint;
         protected override void UpdateInput()
         {
             _targetPosition = target.position;
@@ -100,6 +101,8 @@ namespace ActiveRagdoll
                 {
                     grabLeft = grabRight = false;
                     catchPlayer = false;
+                    _findEdge = false;
+                    accelerating = false;
                     StandBy();
                 }
             }
@@ -108,14 +111,14 @@ namespace ActiveRagdoll
 
                 grabLeft = grabRight = false;
                 catchPlayer = false;
-                
+                _findEdge = false;
+                accelerating = false;
                 Chase();
                 CheckProps();
                 
                 var distance = _targetDir.magnitude;
-                if (distance < attackDistance)
+                if (distance < _attackDistance)
                 {
-                
                     Attack();
                 }
             }
@@ -131,6 +134,15 @@ namespace ActiveRagdoll
 
                 if (_controller.IsGrabbingProps())
                 {
+                    _controller.GrabPropType(out var leftPropType, out var rightPropType);
+                    if (leftPropType == PropType.Gun || rightPropType == PropType.Gun)
+                    {
+                        _attackDistance = attackDistance * 2f;
+                    }
+                    else
+                    {
+                        _attackDistance = attackDistance;
+                    }
                     return;
                 }
                 var items = Physics.OverlapSphere(transform.position, 6.0f, (1 << LayerMask.NameToLayer("Props")));
@@ -145,15 +157,7 @@ namespace ActiveRagdoll
             }
 
         }
-
-        IEnumerator TryGrab()
-        {
-            grabLeft = true;
-            grabRight = true;
-            yield return new WaitForSeconds(2.0f);
-            grabLeft = false;
-            grabRight = false;
-        }
+        
         void CheckGrabbed()
         {
             catchPlayer = false;
@@ -244,7 +248,7 @@ namespace ActiveRagdoll
         
         void Chase()
         {
-            _agent.SetDestination(_targetPosition);
+            _agent.SetDestination(_targetPosition + _randomPoint);
             _agent.stoppingDistance = 1.0f;
             // Moving: 
             if (_moveNextDir.magnitude > 0.1f)
@@ -288,6 +292,24 @@ namespace ActiveRagdoll
             }
         }
 
+        IEnumerator TryGrab()
+        {
+            grabLeft = true;
+            grabRight = true;
+            yield return new WaitForSeconds(2.0f);
+            grabLeft = false;
+            grabRight = false;
+        }
+
+        IEnumerator ChangeRandomPosition()
+        {
+            while (true)
+            {
+                _randomPoint = Random.insideUnitSphere * _attackDistance;
+                yield return new WaitForSeconds(2.0f);
+            }
+
+        }
         void Awake()
         {
             _agent = GetComponentInChildren<NavMeshAgent>();
@@ -313,6 +335,8 @@ namespace ActiveRagdoll
             _agent.enabled = true;
             _playerController = target.GetComponent<PhysicalBodyController>();
             _controller = GetComponent<PhysicalBodyController>();
+            _attackDistance = attackDistance;
+            StartCoroutine(ChangeRandomPosition());
         }
 
         void DropPlayer()

@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 264
+    m_Bits: 2312
   duration: 10
   mass: 15
   radius: 7

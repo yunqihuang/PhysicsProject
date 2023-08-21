@@ -93,10 +93,12 @@ namespace ActiveRagdoll
                             if (activeRagDoll == propTrigger.owner || !propTrigger.isActive)
                             {
                                 hitForce = 0;
+                            }else if (propTrigger.isActive)
+                            {
+                                hitForce *= 1.5f;
                             }
                         }
-
-
+                        
                         Debug.Log($"{transform.root.name} get hit by {col.transform.root.name}, force:{hitForce}");
                         
                         damageEffect.SpawnVFX(contactPosition, contactNormal, hitForce > knockOutThreshold);

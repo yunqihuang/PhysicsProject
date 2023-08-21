@@ -27,7 +27,7 @@ namespace ActiveRagdoll
         public bool moving => _moving;
         public bool jumping => _jumping;
         public bool punching => _punching;
-        
+        public bool accelerating => _accelerating;
         
         
         public bool enableAnimControlMovement;
@@ -972,6 +972,12 @@ namespace ActiveRagdoll
             GrabbedRight(out var rightTag);
             GrabbedLeft(out var leftTag);
             return rightTag == "Props" || leftTag == "Props";
+        }
+
+        public void GrabPropType(out PropType leftPropType, out PropType rightPropType)
+        {
+            leftPropType = leftHandGrabController.propType;
+            rightPropType = rightHandGrabController.propType;
         }
         void ComputeCenterOfMass()
         {
